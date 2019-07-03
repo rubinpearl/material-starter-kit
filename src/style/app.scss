@@ -1,0 +1,115 @@
+@import "./common";
+// Material Theming
+
+// Define theme variables before importing any MDC Web component styles
+// $mdc-theme-primary: midnightblue;
+
+// Import the styles for each MDC Web component
+
+@import "@material/typography/mdc-typography";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+@import "@material/textfield/mdc-text-field";
+@import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/image-list/mdc-image-list";
+@import "@material/chips/mdc-chips";
+@import "@material/fab/mdc-fab";
+
+
+
+// Check out the MDC Web documentation for how to use MDC Sass mixins:
+// https://github.com/material-components/material-components-web
+// .foo-button {
+//   @include mdc-button-ink-color(lightblue);
+//   @include mdc-states(lightblue);
+// }
+
+.tm-body {
+  display: flex;
+  height: 100vh;
+
+	.main-content {
+	  	overflow: auto;
+	  	height: 100%;
+		@include mdc-button-ink-color(#CFB44F);
+	}
+	
+	.app-bar {
+	  	position: absolute;
+	}
+	
+	.mdc-text-field {
+		@include mdc-text-field-ink-color($mdc-theme-on-primary);
+		@include mdc-text-field-label-color($mdc-theme-on-primary);
+		@include mdc-text-field-caret-color($mdc-theme-on-primary);
+	}
+
+	.tm-masonry-image-list {
+		@include mdc-image-list-masonry-columns(2);
+		@include mdc-image-list-shape-radius($radius, $rtl-reflexive);
+
+		.tm-surface {
+			@include mdc-ripple-surface;
+			@include mdc-ripple-radius-bounded;
+			@include mdc-states-base-color(black);
+			@include mdc-states-hover-opacity(.1);
+			@include mdc-states-focus-opacity(.3);
+			@include mdc-states-press-opacity(.4);
+			overflow: hidden;
+			
+			&::before {
+				overflow: hidden;
+			}
+			&::after {
+				overflow: hidden;
+			}
+			.mdc-image-list__supporting{
+				flex-direction: column;
+				.tm-image-list__info{
+					width:100%;
+					.mdc-typography--overline{
+						font-size: 0.74rem;
+						line-height: 2rem;
+						font-weight: 500;
+						letter-spacing: 0.1em;
+						text-transform: capitalize;
+						color: $mdc-theme-secondary;
+					}
+					.mdc-typography--caption{
+ 						@include mdc-theme-prop(color, text-hint-on-light);
+		
+
+
+					}
+				}
+			}
+			
+		}
+	}
+	.app-fab--absolute {
+		position: fixed;
+		bottom: 1rem;
+		right: 1rem;
+	}
+	.mdc-chip {
+		@include mdc-chip-shape-radius($radius, $rtl-reflexive);
+		border: none;
+
+	}
+}
+.mdc-theme--text-disabled-on-background{
+}
+
+.mdc-theme--text-hint-on-background{
+	
+}
+.mdc-theme--text-disabled-on-background{
+	
+}
+.mdc-theme--text-icon-on-background{
+	
+}
