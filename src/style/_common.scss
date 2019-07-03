@@ -7,7 +7,61 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Merriweather', serif;
+  font-family: 'Libre Franklin', sans-serif;
   margin: 0;
   padding-top: 0.1px; // Prevent header h1 margin from pushing body down
 }
+
+$mdc-typography-styles-headline1: (
+  font-family: unquote("Merriweather, serif"),
+  font-weight: 900
+);
+$mdc-typography-styles-headline2: (
+  font-family: unquote("Merriweather, serif"),
+  font-weight: 900
+);
+$mdc-typography-styles-headline3: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 500
+);
+$mdc-typography-styles-headline4: (
+  font-family: unquote("Arial, Helvetica, sans-serif"),
+  font-size: 3.25rem
+);
+$mdc-typography-styles-headline5: (
+  font-family: unquote("Merriweather, serif"),
+  font-weight: 900
+);
+$mdc-typography-styles-headline6: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 500
+);
+$mdc-typography-styles-subtitle1: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 600
+);
+$mdc-typography-styles-subtitle2: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 600
+);
+$mdc-typography-styles-body1: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 400
+);
+$mdc-typography-styles-body2: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 400
+);
+$mdc-typography-styles-caption: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 400
+);
+$mdc-typography-styles-button: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 700
+);
+$mdc-typography-styles-overline: (
+  font-family: unquote("Libre Franklin, sans-serif"),
+  font-weight: 600
+);
