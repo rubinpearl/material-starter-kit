@@ -130,7 +130,7 @@ module.exports = [{
             inject: true,
             template: path.resolve(__dirname, 'src/public/index.html'),
             chunks: ['first'],
-            filename: 'first.html'
+            filename: 'index.html'
         }),
         new HtmlWebpackPlugin({
         	title: 'sign-in',
