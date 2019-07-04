@@ -42,7 +42,22 @@
 	
 	.tm-app-bar {
 	  	position: absolute;
+
+		.mdc-top-app-bar__section {
+		   padding: 8px 16px; 
+		}
+		.mdc-top-app-bar__row{
+		   height: 64px; 
+		}
+		.mdc-top-app-bar--fixed-adjust{
+		   padding-top: 64px; 
+		}
 	}
+	 @media (max-width: 599px) {
+		.mdc-top-app-bar--fixed-adjust{
+		  padding-top: 64px; 
+		}	
+	} 
 	
 	.mdc-text-field {
 		@include mdc-text-field-ink-color($mdc-theme-on-primary);
@@ -72,7 +87,6 @@
 		}
 		
 		width: 100%;
-		margin-top: 8px;
 		height: 48px;
 	}
 
@@ -107,9 +121,10 @@
 					}
 					.mdc-typography--caption{
  						@include mdc-theme-prop(color, text-hint-on-light);
-		
-
-
+					}
+					.mdc-image-list__label{
+						@include mdc-typography(body2);
+						font-weight:600;
 					}
 				}
 			}
@@ -121,12 +136,38 @@
 		bottom: 1rem;
 		right: 1rem;
 	}
+	.tm-horizontal-scroll{
+		overflow-x: auto;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+		
+		.tm-horizontal-scroll-set{
+			display:flex;
+		}
+		.tm-horizontal-scroll__item{
+			display: block;
+		}
+	}
+	.container {
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.menu {
+  display: flex;
+}
+.item > a {
+  display: block;
+}
+	
 	.mdc-chip {
 		@include mdc-chip-shape-radius($radius, $rtl-reflexive);
 		@include mdc-chip-fill-color-accessible($mdc-theme-primary);
 		@include mdc-chip-outline(1px, solid, $tm-dividers-color);
 
 	}
+	
+	
 }
 .mdc-theme--text-disabled-on-background{
 }
@@ -140,3 +181,27 @@
 .mdc-theme--text-icon-on-background{
 	
 }
+
+
+/*
+@media (min-width: 840px) {
+  .mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 24px;
+    padding: var(--mdc-layout-grid-margin-desktop, 24px); } }
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 16px;
+    padding: var(--mdc-layout-grid-margin-tablet, 16px); } }
+
+@media (max-width: 479px) {
+  .mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 16px;
+    padding: var(--mdc-layout-grid-margin-phone, 16px); } }
+*/
