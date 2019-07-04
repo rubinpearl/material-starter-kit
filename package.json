@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm run clean && webpack --mode development --content-base dist --progress --colors ",
     "build": "npm run clean && webpack --mode production --progress --colors --content-base dist",
-    "dist": "npm run build",
+    "dist": "npm run build && webpack --mode development",
     "start:webpack": "webpack-dev-server --content-base dist --hot --https --progress",
     "start": "http-server dist"
   },

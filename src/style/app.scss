@@ -45,9 +45,7 @@
   padding-right: env(safe-area-inset-right);
   overflow-x: hidden;
 	.main-content {
-	  	overflow: auto;
-	  	height: 100%;
-		@include mdc-button-ink-color(#CFB44F);
+
 	}
 	
 	.tm-app-bar {

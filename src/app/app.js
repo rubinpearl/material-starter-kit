@@ -34,8 +34,8 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });
 
-const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
-iconButtonRipple.unbounded = true;
+//const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+//iconButtonRipple.unbounded = true;
 
 
 const chipSetEl = document.querySelector('.mdc-chip-set');
@@ -46,6 +46,5 @@ const fabRipple = new MDCRipple(document.querySelector('.mdc-fab'));
 
 
 
-
-
-const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));
+//const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));
+const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field__icon'));
