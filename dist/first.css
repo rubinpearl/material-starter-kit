@@ -4952,7 +4952,8 @@ svg.mdc-button__icon {
   padding-top: env(safe-area-inset-top);
   padding-bottom: env(safe-area-inset-bottom);
   padding-left: env(safe-area-inset-left);
-  padding-right: env(safe-area-inset-right); }
+  padding-right: env(safe-area-inset-right);
+  overflow-x: hidden; }
   .tm-body .main-content {
     overflow: auto;
     height: 100%; }
@@ -5101,7 +5102,8 @@ svg.mdc-button__icon {
       .tm-body .tm-masonry-image-list .tm-surface::after {
         overflow: hidden; }
       .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting {
-        flex-direction: column; }
+        flex-direction: column;
+        padding: 4px 0; }
         .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting .tm-image-list__info {
           width: 100%; }
           .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting .tm-image-list__info .mdc-typography--overline {
@@ -5205,6 +5207,8 @@ svg.mdc-button__icon {
           color: rgba(0, 0, 0, 0.62); }
         .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--trailing:focus {
           color: rgba(0, 0, 0, 0.87); }
+      .tm-body .mdc-chip-set .mdc-chip .mdc-chip__text {
+        line-height: 18px; }
   .tm-body .tm-horizontal-scroll {
     display: block; }
     .tm-body .tm-horizontal-scroll .tm-horizontal-scroll__content {
@@ -5212,17 +5216,31 @@ svg.mdc-button__icon {
       display: flex;
       flex-direction: row;
       overflow-x: auto;
-      padding: 0 8px; }
+      padding: 0 8px;
+      -webkit-overflow-scrolling: touch; }
 
-/*
 @media (min-width: 840px) {
   .mdc-layout-grid {
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 24px;
-    padding: var(--mdc-layout-grid-margin-desktop, 24px); } }
+    padding: 16px;
+    padding: var(--mdc-layout-grid-margin-desktop, 16px); } }
 
-@media (min-width: 480px) and (max-width: 839px) {
+@media (min-width: 720px) and (max-width: 839px) {
+  .mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 16px;
+    padding: var(--mdc-layout-grid-margin-tablet, 16px); } }
+
+@media (min-width: 600px) and (max-width: 719px) {
+  .mdc-layout-grid {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 16px;
+    padding: var(--mdc-layout-grid-margin-tablet, 16px); } }
+
+@media (min-width: 480px) and (max-width: 599px) {
   .mdc-layout-grid {
     box-sizing: border-box;
     margin: 0 auto;
@@ -5235,5 +5253,4 @@ svg.mdc-button__icon {
     margin: 0 auto;
     padding: 16px;
     padding: var(--mdc-layout-grid-margin-phone, 16px); } }
-*/
 
