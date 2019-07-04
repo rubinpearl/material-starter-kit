@@ -4943,7 +4943,8 @@ svg.mdc-button__icon {
 
 .tm-body {
   display: flex;
-  height: 100vh; }
+  height: 100vh;
+  width: 100%; }
   .tm-body .main-content {
     overflow: auto;
     height: 100%; }
@@ -5120,95 +5121,87 @@ svg.mdc-button__icon {
     bottom: 1rem;
     right: 1rem; }
   .tm-body .tm-horizontal-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch; }
-    .tm-body .tm-horizontal-scroll .tm-horizontal-scroll-set {
-      display: flex; }
-    .tm-body .tm-horizontal-scroll .tm-horizontal-scroll__item {
-      display: block; }
-  .tm-body .container {
-    white-space: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; }
-  .tm-body .menu {
-    display: flex; }
-  .tm-body .item > a {
-    display: block; }
-  .tm-body .mdc-chip {
-    border-radius: 8px;
-    background-color: #FFFFFF;
-    color: rgba(0, 0, 0, 0.87);
-    /* @alternate */
-    color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
-    padding: 6px 11px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.12); }
-    .tm-body .mdc-chip::before, .tm-body .mdc-chip::after {
-      background-color: rgba(0, 0, 0, 0.87); }
-      @supports not (-ms-ime-align: auto) {
-        .tm-body .mdc-chip::before, .tm-body .mdc-chip::after {
-          /* @alternate */
-          background-color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); } }
-    .tm-body .mdc-chip:hover::before {
-      opacity: 0.04; }
-    .tm-body .mdc-chip:not(.mdc-ripple-upgraded):focus::before, .tm-body .mdc-chip.mdc-ripple-upgraded--background-focused::before {
-      transition-duration: 75ms;
-      opacity: 0.12; }
-    .tm-body .mdc-chip:not(.mdc-ripple-upgraded)::after {
-      transition: opacity 150ms linear; }
-    .tm-body .mdc-chip:not(.mdc-ripple-upgraded):active::after {
-      transition-duration: 75ms;
-      opacity: 0.12; }
-    .tm-body .mdc-chip.mdc-ripple-upgraded {
-      --mdc-ripple-fg-opacity: 0.12; }
-    .tm-body .mdc-chip:hover {
+    min-width: 100%;
+    min-height: 48px;
+    display: flex;
+    overflow-x: auto; }
+  .tm-body .mdc-chip-set {
+    flex-wrap: nowrap; }
+    .tm-body .mdc-chip-set .mdc-chip {
+      border-radius: 8px;
+      background-color: #FFFFFF;
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
-      color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
-    .tm-body .mdc-chip.mdc-chip--selected::before {
-      opacity: 0.08; }
-    .tm-body .mdc-chip.mdc-chip--selected::before, .tm-body .mdc-chip.mdc-chip--selected::after {
-      background-color: rgba(0, 0, 0, 0.87); }
-      @supports not (-ms-ime-align: auto) {
-        .tm-body .mdc-chip.mdc-chip--selected::before, .tm-body .mdc-chip.mdc-chip--selected::after {
-          /* @alternate */
-          background-color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); } }
-    .tm-body .mdc-chip.mdc-chip--selected:hover::before {
-      opacity: 0.12; }
-    .tm-body .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded):focus::before, .tm-body .mdc-chip.mdc-chip--selected.mdc-ripple-upgraded--background-focused::before {
-      transition-duration: 75ms;
-      opacity: 0.2; }
-    .tm-body .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded)::after {
-      transition: opacity 150ms linear; }
-    .tm-body .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded):active::after {
-      transition-duration: 75ms;
-      opacity: 0.2; }
-    .tm-body .mdc-chip.mdc-chip--selected.mdc-ripple-upgraded {
-      --mdc-ripple-fg-opacity: 0.2; }
-    .tm-body .mdc-chip.mdc-chip--selected {
-      color: rgba(0, 0, 0, 0.87);
-      /* @alternate */
-      color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
-      .tm-body .mdc-chip.mdc-chip--selected .mdc-chip__icon--leading {
-        color: rgba(0, 0, 0, 0.54); }
-      .tm-body .mdc-chip.mdc-chip--selected:hover {
+      color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
+      padding: 6px 11px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.12);
+      flex-wrap: nowrap; }
+      .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
+        background-color: rgba(0, 0, 0, 0.87); }
+        @supports not (-ms-ime-align: auto) {
+          .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
+            /* @alternate */
+            background-color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); } }
+      .tm-body .mdc-chip-set .mdc-chip:hover::before {
+        opacity: 0.04; }
+      .tm-body .mdc-chip-set .mdc-chip:not(.mdc-ripple-upgraded):focus::before, .tm-body .mdc-chip-set .mdc-chip.mdc-ripple-upgraded--background-focused::before {
+        transition-duration: 75ms;
+        opacity: 0.12; }
+      .tm-body .mdc-chip-set .mdc-chip:not(.mdc-ripple-upgraded)::after {
+        transition: opacity 150ms linear; }
+      .tm-body .mdc-chip-set .mdc-chip:not(.mdc-ripple-upgraded):active::after {
+        transition-duration: 75ms;
+        opacity: 0.12; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-ripple-upgraded {
+        --mdc-ripple-fg-opacity: 0.12; }
+      .tm-body .mdc-chip-set .mdc-chip:hover {
         color: rgba(0, 0, 0, 0.87);
         /* @alternate */
         color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
-    .tm-body .mdc-chip .mdc-chip__checkmark-path {
-      stroke: rgba(0, 0, 0, 0.87);
-      /* @alternate */
-      stroke: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
-    .tm-body .mdc-chip .mdc-chip__icon--leading {
-      color: rgba(0, 0, 0, 0.54); }
-    .tm-body .mdc-chip .mdc-chip__icon--trailing {
-      color: rgba(0, 0, 0, 0.54); }
-      .tm-body .mdc-chip .mdc-chip__icon--trailing:hover {
-        color: rgba(0, 0, 0, 0.62); }
-      .tm-body .mdc-chip .mdc-chip__icon--trailing:focus {
-        color: rgba(0, 0, 0, 0.87); }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected::before {
+        opacity: 0.08; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected::before, .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected::after {
+        background-color: rgba(0, 0, 0, 0.87); }
+        @supports not (-ms-ime-align: auto) {
+          .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected::before, .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected::after {
+            /* @alternate */
+            background-color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); } }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected:hover::before {
+        opacity: 0.12; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded):focus::before, .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected.mdc-ripple-upgraded--background-focused::before {
+        transition-duration: 75ms;
+        opacity: 0.2; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded)::after {
+        transition: opacity 150ms linear; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected:not(.mdc-ripple-upgraded):active::after {
+        transition-duration: 75ms;
+        opacity: 0.2; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected.mdc-ripple-upgraded {
+        --mdc-ripple-fg-opacity: 0.2; }
+      .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected {
+        color: rgba(0, 0, 0, 0.87);
+        /* @alternate */
+        color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
+        .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected .mdc-chip__icon--leading {
+          color: rgba(0, 0, 0, 0.54); }
+        .tm-body .mdc-chip-set .mdc-chip.mdc-chip--selected:hover {
+          color: rgba(0, 0, 0, 0.87);
+          /* @alternate */
+          color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
+      .tm-body .mdc-chip-set .mdc-chip .mdc-chip__checkmark-path {
+        stroke: rgba(0, 0, 0, 0.87);
+        /* @alternate */
+        stroke: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87)); }
+      .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--leading {
+        color: rgba(0, 0, 0, 0.54); }
+      .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--trailing {
+        color: rgba(0, 0, 0, 0.54); }
+        .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--trailing:hover {
+          color: rgba(0, 0, 0, 0.62); }
+        .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--trailing:focus {
+          color: rgba(0, 0, 0, 0.87); }
 
 /*
 @media (min-width: 840px) {

@@ -33,6 +33,7 @@
 .tm-body {
   display: flex;
   height: 100vh;
+  width: 100%;
 
 	.main-content {
 	  	overflow: auto;
@@ -137,38 +138,23 @@
 		right: 1rem;
 	}
 	.tm-horizontal-scroll{
+  		min-width: 100%;
+  		min-height: 48px;
+		display:flex;
 		overflow-x: auto;
-		white-space: nowrap;
-		-webkit-overflow-scrolling: touch;
 		
-		.tm-horizontal-scroll-set{
-			display:flex;
-		}
-		.tm-horizontal-scroll__item{
-			display: block;
+	}
+	.mdc-chip-set{
+		flex-wrap: nowrap;
+		.mdc-chip {
+			@include mdc-chip-shape-radius($radius, $rtl-reflexive);
+			@include mdc-chip-fill-color-accessible($mdc-theme-primary);
+			@include mdc-chip-outline(1px, solid, $tm-dividers-color);
+			flex-wrap: nowrap;
 		}
 	}
-	.container {
-  white-space: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
 }
-.menu {
-  display: flex;
-}
-.item > a {
-  display: block;
-}
-	
-	.mdc-chip {
-		@include mdc-chip-shape-radius($radius, $rtl-reflexive);
-		@include mdc-chip-fill-color-accessible($mdc-theme-primary);
-		@include mdc-chip-outline(1px, solid, $tm-dividers-color);
 
-	}
-	
-	
-}
 .mdc-theme--text-disabled-on-background{
 }
 
