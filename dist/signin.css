@@ -4941,7 +4941,8 @@ svg.mdc-button__icon {
     position: absolute; }
   .tm-body .mdc-text-field {
     width: 100%;
-    margin-top: 8px; }
+    margin-top: 8px;
+    height: 48px; }
     .tm-body .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
       color: #000000; }
     .tm-body .mdc-text-field:not(.mdc-text-field--disabled) .mdc-floating-label {
@@ -4977,9 +4978,11 @@ svg.mdc-button__icon {
         border-radius: 8px 0 0 8px; }
     .tm-body .mdc-text-field .mdc-text-field__input {
       border-radius: 8px; }
+    .tm-body .mdc-text-field .mdc-text-field__icon {
+      bottom: 12px; }
     .tm-body .mdc-text-field .mdc-top-app-bar__navigation-icon {
-      left: 4px;
-      bottom: 4px; }
+      left: 0;
+      bottom: 0; }
     .tm-body .mdc-text-field .mdc-text-field__input {
       padding-left: 56px; }
   .tm-body .tm-masonry-image-list {

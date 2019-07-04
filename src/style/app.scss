@@ -55,15 +55,19 @@
 		.mdc-text-field__input{
 			border-radius: $radius;
 		}
+		.mdc-text-field__icon{
+			bottom: 12px;
+		}
 		.mdc-top-app-bar__navigation-icon{
-			left:4px;
-			bottom:4px;
+			left:0;
+			bottom:0;
 		}
 		.mdc-text-field__input{
 			padding-left: 56px;
 		}
 		width: 100%;
 		margin-top: 8px;
+		height: 48px;
 	}
 
 	.tm-masonry-image-list {
