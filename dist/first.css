@@ -4942,9 +4942,17 @@ svg.mdc-button__icon {
   will-change: box-shadow; }
 
 .tm-body {
-  display: flex;
+  display: initial;
   height: 100vh;
-  width: 100%; }
+  width: 100%;
+  padding-top: constant(safe-area-inset-top);
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-left: constant(safe-area-inset-left);
+  padding-right: constant(safe-area-inset-right);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right); }
   .tm-body .main-content {
     overflow: auto;
     height: 100%; }
@@ -5120,12 +5128,8 @@ svg.mdc-button__icon {
     position: fixed;
     bottom: 1rem;
     right: 1rem; }
-  .tm-body .tm-horizontal-scroll {
-    min-width: 100%;
-    min-height: 48px;
-    display: flex;
-    overflow-x: auto; }
   .tm-body .mdc-chip-set {
+    display: flex;
     flex-wrap: nowrap; }
     .tm-body .mdc-chip-set .mdc-chip {
       border-radius: 8px;
@@ -5136,8 +5140,7 @@ svg.mdc-button__icon {
       padding: 6px 11px;
       border-width: 1px;
       border-style: solid;
-      border-color: rgba(0, 0, 0, 0.12);
-      flex-wrap: nowrap; }
+      border-color: rgba(0, 0, 0, 0.12); }
       .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
@@ -5202,6 +5205,14 @@ svg.mdc-button__icon {
           color: rgba(0, 0, 0, 0.62); }
         .tm-body .mdc-chip-set .mdc-chip .mdc-chip__icon--trailing:focus {
           color: rgba(0, 0, 0, 0.87); }
+  .tm-body .tm-horizontal-scroll {
+    display: block; }
+    .tm-body .tm-horizontal-scroll .tm-horizontal-scroll__content {
+      min-height: 48px;
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      padding: 0 4px; }
 
 /*
 @media (min-width: 840px) {
