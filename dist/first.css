@@ -375,6 +375,20 @@ text-hint-on-dark,
 text-disabled-on-dark, 
 text-icon-on-dark
 
+    headline1
+    headline2
+    headline3
+    headline4
+    headline5
+    headline6
+    subtitle1
+    subtitle2
+    body1
+    body2
+    caption
+    button
+    overline
+
 
 Dark text (#000000) 	Opacity
 Primary text 	87%
@@ -470,13 +484,11 @@ html, body {
   height: 100%; }
 
 body {
-  font-family: 'Merriweather', serif;
-  font-family: 'Libre Franklin', sans-serif;
   margin: 0;
   padding-top: 0.1px; }
 
 .mdc-typography {
-  font-family: Roboto, sans-serif;
+  font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased; }
 
@@ -484,7 +496,7 @@ body {
   font-family: Merriweather, serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 6rem;
+  font-size: 5.71188rem;
   line-height: 6rem;
   font-weight: 900;
   letter-spacing: -0.01562em;
@@ -495,7 +507,7 @@ body {
   font-family: Merriweather, serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 3.75rem;
+  font-size: 3.57rem;
   line-height: 3.75rem;
   font-weight: 900;
   letter-spacing: -0.00833em;
@@ -506,7 +518,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 3rem;
+  font-size: 2.99063rem;
   line-height: 3.125rem;
   font-weight: 500;
   letter-spacing: normal;
@@ -514,23 +526,23 @@ body {
   text-transform: inherit; }
 
 .mdc-typography--headline4 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Merriweather, serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 3.25rem;
+  font-size: 2.02312rem;
   line-height: 2.5rem;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 0.00735em;
   text-decoration: inherit;
   text-transform: inherit; }
 
 .mdc-typography--headline5 {
-  font-family: Merriweather, serif;
+  font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.5rem;
+  font-size: 1.495rem;
   line-height: 2rem;
-  font-weight: 900;
+  font-weight: 500;
   letter-spacing: normal;
   text-decoration: inherit;
   text-transform: inherit; }
@@ -539,7 +551,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.25rem;
+  font-size: 1.24625rem;
   line-height: 2rem;
   font-weight: 500;
   letter-spacing: 0.0125em;
@@ -550,7 +562,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -561,7 +573,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 1.375rem;
   font-weight: 600;
   letter-spacing: 0.00714em;
@@ -572,7 +584,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.9975rem;
   line-height: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.03125em;
@@ -583,7 +595,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.01786em;
@@ -594,7 +606,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.75rem;
+  font-size: 0.7475rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.03333em;
@@ -605,7 +617,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: 0.08929em;
@@ -616,7 +628,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.75rem;
+  font-size: 0.7475rem;
   line-height: 2rem;
   font-weight: 600;
   letter-spacing: 0.16667em;
@@ -691,7 +703,7 @@ body {
     font-family: Libre Franklin, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-size: 1.25rem;
+    font-size: 1.24625rem;
     line-height: 2rem;
     font-weight: 500;
     letter-spacing: 0.0125em;
@@ -987,7 +999,7 @@ body {
     font-family: Libre Franklin, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-size: 0.875rem;
+    font-size: 0.8725rem;
     line-height: 1.375rem;
     font-weight: 600;
     letter-spacing: 0.00714em;
@@ -1004,7 +1016,7 @@ body {
     font-family: Libre Franklin, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-size: 0.875rem;
+    font-size: 0.8725rem;
     line-height: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.01786em;
@@ -1061,7 +1073,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1.25rem;
+  font-size: 1.24625rem;
   line-height: 2rem;
   font-weight: 500;
   letter-spacing: 0.0125em;
@@ -1089,7 +1101,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.01786em;
@@ -1182,7 +1194,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -1284,7 +1296,7 @@ body {
     font-family: Libre Franklin, sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-size: 0.75rem;
+    font-size: 0.7475rem;
     line-height: 1.25rem;
     font-weight: 400;
     letter-spacing: 0.03333em;
@@ -1350,7 +1362,7 @@ body {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.01786em;
@@ -1485,7 +1497,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -1714,7 +1726,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -1895,7 +1907,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.75rem;
+  font-size: 0.7475rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.03333em;
@@ -1925,7 +1937,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.75rem;
+  font-size: 0.7475rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.03333em;
@@ -2121,7 +2133,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -3424,7 +3436,7 @@ a.mdc-list-item {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: 0.08929em;
@@ -4364,7 +4376,7 @@ svg.mdc-button__icon {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 0.99687rem;
   line-height: 1.75rem;
   font-weight: 600;
   letter-spacing: 0.00937em;
@@ -4423,7 +4435,7 @@ svg.mdc-button__icon {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 1.25rem;
   font-weight: 400;
   letter-spacing: 0.01786em;
@@ -4718,7 +4730,7 @@ svg.mdc-button__icon {
   font-family: Libre Franklin, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 0.875rem;
+  font-size: 0.8725rem;
   line-height: 2.25rem;
   font-weight: 700;
   letter-spacing: 0.08929em;
@@ -4984,7 +4996,12 @@ svg.mdc-button__icon {
       left: 0;
       bottom: 0; }
     .tm-body .mdc-text-field .mdc-text-field__input {
-      padding-left: 56px; }
+      padding-left: 56px;
+      /*
+			&::placeholder{
+				@include mdc-typography(subtitle1);
+			}
+			*/ }
   .tm-body .tm-masonry-image-list {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -5071,8 +5088,8 @@ svg.mdc-button__icon {
         .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting .tm-image-list__info {
           width: 100%; }
           .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting .tm-image-list__info .mdc-typography--overline {
-            font-size: rem-calc(11px);
-            letter-spacing: 0.1em;
+            font-size: 0.685rem;
+            letter-spacing: 0.054em;
             text-transform: capitalize;
             color: #00838e; }
           .tm-body .tm-masonry-image-list .tm-surface .mdc-image-list__supporting .tm-image-list__info .mdc-typography--caption {

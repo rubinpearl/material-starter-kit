@@ -64,7 +64,13 @@
 		}
 		.mdc-text-field__input{
 			padding-left: 56px;
+		/*
+			&::placeholder{
+				@include mdc-typography(subtitle1);
+			}
+			*/
 		}
+		
 		width: 100%;
 		margin-top: 8px;
 		height: 48px;
@@ -94,8 +100,8 @@
 				.tm-image-list__info{
 					width:100%;
 					.mdc-typography--overline{
-						font-size: rem-calc(11px);
-						letter-spacing: 0.1em;
+						font-size: 0.685rem;
+						letter-spacing: 0.054em;
 						text-transform: capitalize;
 						color: $mdc-theme-secondary;
 					}
