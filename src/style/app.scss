@@ -11,6 +11,7 @@
 @import "@material/drawer/mdc-drawer";
 @import "@material/list/mdc-list";
 @import "@material/textfield/mdc-text-field";
+@import "@material/textfield/icon/mdc-text-field-icon";
 @import "@material/card/mdc-card";
 @import "@material/button/mdc-button";
 @import "@material/icon-button/mdc-icon-button";
@@ -18,6 +19,7 @@
 @import "@material/image-list/mdc-image-list";
 @import "@material/chips/mdc-chips";
 @import "@material/fab/mdc-fab";
+@import "@material/elevation/mdc-elevation";
 
 
 
@@ -46,6 +48,21 @@
 		@include mdc-text-field-ink-color($mdc-theme-on-primary);
 		@include mdc-text-field-label-color($mdc-theme-on-primary);
 		@include mdc-text-field-caret-color($mdc-theme-on-primary);
+		@include mdc-text-field-outline-color(transparent);
+		@include mdc-text-field-hover-outline-color(transparent);
+		@include mdc-text-field-focused-outline-color(transparent);
+		@include mdc-text-field-outline-shape-radius($radius, $rtl-reflexive);
+		.mdc-text-field__input{
+			border-radius: $radius;
+		}
+		.mdc-top-app-bar__navigation-icon{
+			left:4px;
+			bottom:4px;
+		}
+		.mdc-text-field__input{
+			padding-left: 56px;
+		}
+		width: 100%;
 	}
 
 	.tm-masonry-image-list {
@@ -54,7 +71,7 @@
 
 		.tm-surface {
 			@include mdc-ripple-surface;
-			@include mdc-ripple-radius-bounded;
+			@include mdc-ripple-radius-bounded($radius);
 			@include mdc-states-base-color(black);
 			@include mdc-states-hover-opacity(.1);
 			@include mdc-states-focus-opacity(.3);
@@ -72,9 +89,7 @@
 				.tm-image-list__info{
 					width:100%;
 					.mdc-typography--overline{
-						font-size: 0.74rem;
-						line-height: 2rem;
-						font-weight: 500;
+						font-size: rem-calc(11px);
 						letter-spacing: 0.1em;
 						text-transform: capitalize;
 						color: $mdc-theme-secondary;
@@ -97,7 +112,8 @@
 	}
 	.mdc-chip {
 		@include mdc-chip-shape-radius($radius, $rtl-reflexive);
-		border: none;
+		@include mdc-chip-fill-color-accessible($mdc-theme-primary);
+		@include mdc-chip-outline(1px, solid, $tm-dividers-color);
 
 	}
 }

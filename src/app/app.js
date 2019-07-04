@@ -4,7 +4,7 @@ import {MDCDrawer} from "@material/drawer";
 import {MDCTextField} from '@material/textfield';
 import {MDCChipSet} from '@material/chips';
 import {MDCRipple} from '@material/ripple';
-
+import {MDCTextFieldIcon} from '@material/textfield/icon';
 
 //const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
@@ -43,3 +43,9 @@ const chipSet = new MDCChipSet(chipSetEl);
 
 
 const fabRipple = new MDCRipple(document.querySelector('.mdc-fab'));
+
+
+
+
+
+const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field-icon'));

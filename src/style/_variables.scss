@@ -1,4 +1,4 @@
-$mdc-theme-primary: #FFCCFF;
+$mdc-theme-primary: #FFFFFF;
 $mdc-theme-on-primary: #000000;
 
 $mdc-theme-secondary: #00838e;
@@ -10,11 +10,54 @@ $mdc-theme-on-surface: #000000;
 $mdc-theme-background: #FFFFFF;
 $mdc-theme-on-background: #000000;
 
+/*
+primary, 
+secondary, 
+background, 
+surface, 
+error, 
+on-primary, 
+on-secondary, 
+on-surface, 
+on-error, 
+text-primary-on-background, 
+text-secondary-on-background, 
+text-hint-on-background, 
+text-disabled-on-background, 
+text-icon-on-background, 
+text-primary-on-light, 
+text-secondary-on-light, 
+text-hint-on-light, 
+text-disabled-on-light, 
+text-icon-on-light, 
+text-primary-on-dark, 
+text-secondary-on-dark, 
+text-hint-on-dark, 
+text-disabled-on-dark, 
+text-icon-on-dark
 
 
+Dark text (#000000) 	Opacity
+Primary text 	87%
+Secondary text 	54%
+Disabled text, hint text 	38%
+Dividers 	12%
 
+「White text on dark backgrounds」には、
+Light text (#FFFFFF) 	Opacity
+Primary text 	100%
+Secondary text 	70%
+Disabled text, hint text 	50%
+Dividers 	12%
+*/
+
+$tm-dividers-color: rgba(0,0,0, 0.12);
 
 $radius: 8px;
 $rtl-reflexive: false;
 $height-0: 0;
+$height-4px:0;
+$height-8px:0;
+$height-10px:0;
+$height-11px:0;
 
