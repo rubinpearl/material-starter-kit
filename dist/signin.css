@@ -5271,19 +5271,22 @@ svg.mdc-button__icon {
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    padding: 0 8px;
+    padding: 8px 12px;
     -webkit-overflow-scrolling: touch; }
   .tm-body .mt-rounded-button {
-    border-radius: 18px;
+    border-radius: 24px;
     padding: 0 39px 0 39px;
     border-width: 1px;
-    padding: 0 4px 0 4px;
+    padding: 0 12px 0 12px;
     width: 100%;
-    max-width: 360px; }
+    max-width: 360px;
+    height: 48px; }
     .tm-body .mt-rounded-button:not(:disabled) {
       color: #00838e; }
+    .tm-body .mt-rounded-button:not(:disabled) {
+      background-color: #FFFFFF; }
     .tm-body .mt-rounded-button.mdc-button--dense {
-      border-radius: 16px; }
+      border-radius: 24px; }
     .tm-body .mt-rounded-button:not(:disabled) {
       border-color: rgba(0, 0, 0, 0.12); }
   .tm-body .tm-centering-box {

@@ -205,17 +205,19 @@
 			display:flex;
 			flex-direction: row;
 			overflow-x: auto;
-			padding:0 8px;
+			padding:8px 12px;
 			-webkit-overflow-scrolling: touch;
 	}
 	.mt-rounded-button {
 		@include mdc-button-ink-color($mdc-theme-secondary);
-		@include mdc-button-shape-radius(50%, $rtl-reflexive);
+		@include mdc-button-container-fill-color($mdc-theme-surface);
+		@include mdc-button-shape-radius(24px, $rtl-reflexive);
 		@include mdc-button-outline-color($tm-dividers-color);
 		@include mdc-button-outline-width(1px, 40px);
-		@include mdc-button-horizontal-padding(4px);
+		@include mdc-button-horizontal-padding(12px);
 		width:100%;
 		max-width:360px;
+		height:48px;
 	}
 	.tm-centering-box{
 	    display: flex;
