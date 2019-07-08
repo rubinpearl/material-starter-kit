@@ -5213,6 +5213,85 @@ svg.mdc-button__icon {
       overflow-x: auto;
       padding: 0 8px;
       -webkit-overflow-scrolling: touch; }
+  .tm-body .tm-default-card {
+    width: 160px;
+    margin: 4px; }
+    .tm-body .tm-default-card .tm-default-card__primary {
+      display: flex;
+      padding: 12px 16px 0 16px; }
+      .tm-body .tm-default-card .tm-default-card__primary .tm-default-card__accent {
+        background-color: #00838e;
+        font-family: Libre Franklin, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-size: 0.7475rem;
+        line-height: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.16667em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-size: 0.685rem;
+        letter-spacing: 0.054em;
+        line-height: 1.125rem;
+        padding: 0 4px;
+        margin-right: 2px;
+        border-radius: 2px; }
+      .tm-body .tm-default-card .tm-default-card__primary .tm-default-card__title {
+        font-family: Libre Franklin, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-size: 0.7475rem;
+        line-height: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.16667em;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #00838e;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0.685rem;
+        line-height: 1.125rem; }
+    .tm-body .tm-default-card .tm-default-card__secondary {
+      font-family: Libre Franklin, sans-serif;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+      font-size: 0.8725rem;
+      line-height: 1.25rem;
+      font-weight: 400;
+      letter-spacing: 0.01786em;
+      text-decoration: inherit;
+      text-transform: inherit;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      padding: 4px 16px 12px 16px; }
+  .tm-body .tm-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 0 8px;
+    -webkit-overflow-scrolling: touch; }
+  .tm-body .mt-rounded-button {
+    border-radius: 18px;
+    padding: 0 39px 0 39px;
+    border-width: 1px;
+    padding: 0 4px 0 4px;
+    width: 100%;
+    max-width: 360px; }
+    .tm-body .mt-rounded-button:not(:disabled) {
+      color: #00838e; }
+    .tm-body .mt-rounded-button.mdc-button--dense {
+      border-radius: 16px; }
+    .tm-body .mt-rounded-button:not(:disabled) {
+      border-color: rgba(0, 0, 0, 0.12); }
+  .tm-body .tm-centering-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px; }
 
 @media (min-width: 840px) {
   .mdc-layout-grid {

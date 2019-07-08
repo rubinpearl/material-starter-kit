@@ -56,6 +56,11 @@ module.exports = [{
           path.resolve(__dirname, 'src/public/signin.html'),
           path.resolve(__dirname, 'src/style/app.scss'),
           path.resolve(__dirname, 'src/app/app.js')
+		  ],
+	  elements:[
+          path.resolve(__dirname, 'src/public/elements.html'),
+          path.resolve(__dirname, 'src/style/app.scss'),
+          path.resolve(__dirname, 'src/app/app.js')
 		  ]
 	  },
 	 // ['./app.scss', './app.js'],
@@ -139,6 +144,14 @@ module.exports = [{
             template: path.resolve(__dirname, 'src/public/signin.html'),
             chunks: ['signin'],
             filename: 'signin.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'sign-in',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/signin.html'),
+            chunks: ['elements'],
+            filename: 'elements.html'
         }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
