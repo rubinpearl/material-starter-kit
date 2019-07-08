@@ -151,12 +151,14 @@
 	    flex-wrap: nowrap;
 		.mdc-chip {
 			z-index:1;
-			@include mdc-chip-shape-radius($radius, $rtl-reflexive);
+			@include mdc-chip-shape-radius(16px, $rtl-reflexive);
 			@include mdc-chip-fill-color-accessible($mdc-theme-primary);
 			@include mdc-chip-outline(1px, solid, $tm-dividers-color);
+		//	@include mdc-chip-fill-color($tm-dividers-color);
 			.mdc-chip__text{
 				line-height:18px;
 			}
+			box-sizing: border-box; 
 		}
 	}
 	.tm-horizontal-scroll{

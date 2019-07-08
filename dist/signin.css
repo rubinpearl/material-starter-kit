@@ -5324,7 +5324,7 @@ svg.mdc-button__icon {
     flex-wrap: nowrap; }
     .tm-body .mdc-chip-set .mdc-chip {
       z-index: 1;
-      border-radius: 8px;
+      border-radius: 16px;
       background-color: #FFFFFF;
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
@@ -5332,7 +5332,8 @@ svg.mdc-button__icon {
       padding: 6px 11px;
       border-width: 1px;
       border-style: solid;
-      border-color: rgba(0, 0, 0, 0.12); }
+      border-color: rgba(0, 0, 0, 0.12);
+      box-sizing: border-box; }
       .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
