@@ -29,15 +29,12 @@ for (const textFiled of textFileds) {
 }
 
 
-const selector = '.mdc-card__primary-action, .mdc-chip, .tm-surface';
+const selector = '.mdc-button, .mdc-card__primary-action, .mdc-chip, .tm-surface';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });
 
-const buttons = document.querySelectorAll('.tm-button');
-for (const button of buttons) {
-	MDCRipple.attachTo(button);
-}
+
 
 
 

@@ -221,8 +221,6 @@
 		padding:12px 0;
 		.mdc-button {
 			z-index:1;
-  @include mdc-ripple-surface;
-  @include mdc-ripple-radius-bounded;
 		@include mdc-button-ink-color($mdc-theme-secondary);
 		@include mdc-button-container-fill-color($mdc-theme-surface);
 		@include mdc-button-shape-radius(24px, $rtl-reflexive);
@@ -233,7 +231,7 @@
 		width:100%;
 		max-width:360px;
 		//border-radius:24px;
-		//height:48px;
+		height:48px;
 			}
 	}
 	.tm-header-box{
