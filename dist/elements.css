@@ -5279,6 +5279,7 @@ svg.mdc-button__icon {
     padding: 0 39px 0 39px;
     border-width: 1px;
     padding: 0 12px 0 12px;
+    border-radius: 24px;
     width: 100%;
     max-width: 360px;
     height: 48px; }

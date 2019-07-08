@@ -218,6 +218,7 @@
 		@include mdc-button-outline-width(1px, 40px);
 		@include mdc-button-horizontal-padding(12px);
 		@include mdc-states-base-color(black);
+		border-radius:24px;
 		width:100%;
 		max-width:360px;
 		height:48px;
