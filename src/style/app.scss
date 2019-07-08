@@ -158,7 +158,8 @@
 			.mdc-chip__text{
 				line-height:18px;
 			}
-			box-sizing: border-box; 
+			box-sizing: content-box; 
+			padding:0 12px;
 		}
 	}
 	.tm-horizontal-scroll{

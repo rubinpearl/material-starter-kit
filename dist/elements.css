@@ -5333,7 +5333,8 @@ svg.mdc-button__icon {
       border-width: 1px;
       border-style: solid;
       border-color: rgba(0, 0, 0, 0.12);
-      box-sizing: border-box; }
+      box-sizing: content-box;
+      padding: 0 12px; }
       .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
