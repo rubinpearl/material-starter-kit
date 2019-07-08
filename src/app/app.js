@@ -29,12 +29,12 @@ for (const textFiled of textFileds) {
 }
 
 
-const selector = '.mdc-button, .mdc-card__primary-action, .mdc-chip, .tm-surface';
+const selector = '.mdc-button, .mdc-card__primary-action, .tm-surface';
 const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
   return new MDCRipple(el);
 });
 
-
+// .mdc-chip,
 
 
 
