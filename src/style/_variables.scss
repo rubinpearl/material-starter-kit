@@ -105,6 +105,14 @@ text-hint-on-dark,
 text-disabled-on-dark, 
 text-icon-on-dark
 
+
+$tm-light-background-color: rgba(0,0,0, 0.07);
+$tm-dividers-color: rgba(0,0,0, 0.12);
+
+//$tm-secondary-text-color: rgba(0,0,0, 0.54);
+//text-primary-on-light
+
+
     headline1
     headline2
     headline3
@@ -262,9 +270,11 @@ Dividers 	12%
 }
 
 
-$tm-dividers-color: rgba(0,0,0, 0.12);
-
 $radius: 8px;
 $rtl-reflexive: false;
-
+$tm-light-background-color: rgba(0,0,0, 0.04);
+$tm-dividers-color: rgba(0,0,0, 0.12);
+$tm-secondary-light-background-color: rgba(0, 131, 142, 0.12);
+//$tm-secondary-text-color: rgba(0,0,0, 0.54);
+//text-primary-on-light
 

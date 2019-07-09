@@ -152,14 +152,24 @@
 		.mdc-chip {
 			z-index:1;
 			@include mdc-chip-shape-radius(16px, $rtl-reflexive);
-			@include mdc-chip-fill-color-accessible($mdc-theme-primary);
-			@include mdc-chip-outline(1px, solid, $tm-dividers-color);
-		//	@include mdc-chip-fill-color($tm-dividers-color);
+			//@include mdc-chip-fill-color-accessible($tm-light-background-color);
+		//	@include mdc-chip-outline(1px, solid, $tm-dividers-color);
+		@include mdc-chip-ink-color(text-primary-on-light);
+			@include mdc-chip-fill-color($tm-light-background-color);
+
+						@include mdc-states-focus-opacity(0);
+		border:none;
 			.mdc-chip__text{
 				line-height:18px;
 			}
-			box-sizing: content-box; 
-			padding:0 12px;
+		//	box-sizing: content-box; 
+		//	padding:0 12px;
+		}
+		.mdc-chip--selected {
+			@include mdc-chip-ink-color(text-primary-on-light);
+		//	@include mdc-chip-leading-icon-color(secondary, 0.84);
+			@include mdc-chip-fill-color($tm-secondary-light-background-color);
+									@include mdc-states-focus-opacity(0);
 		}
 	}
 	.tm-horizontal-scroll{
