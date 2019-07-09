@@ -5331,13 +5331,17 @@ svg.mdc-button__icon {
     display: flex;
     flex-wrap: nowrap; }
     .tm-body .mdc-chip-set .mdc-chip {
+      box-sizing: border-box;
       z-index: 1;
       border-radius: 16px;
+      padding: 6px 11px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgba(0, 0, 0, 0.12);
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
       color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
-      background-color: rgba(0, 0, 0, 0.04);
-      border: none; }
+      background-color: rgba(0, 0, 0, 0.04); }
       .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
@@ -5370,6 +5374,7 @@ svg.mdc-button__icon {
       .tm-body .mdc-chip-set .mdc-chip .mdc-chip__text {
         line-height: 18px; }
     .tm-body .mdc-chip-set .mdc-chip--selected {
+      box-sizing: border-box;
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
       color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
@@ -5552,7 +5557,11 @@ svg.mdc-button__icon {
     background-color: #caabd6;
     background: filter-gradient(#caabd6, #59c3bf, horizontal);
     background: -webkit-gradient(linear, left top, right bottom, from(#caabd6), color-stop(12%, rgba(202, 171, 214, 0.87)), color-stop(50%, rgba(89, 195, 191, 0.54)), color-stop(88%, rgba(253, 253, 226, 0.87)), to(rgba(253, 253, 226, 0.54)));
-    background: linear-gradient(left top, #caabd6 0%, rgba(202, 171, 214, 0.87) 12%, rgba(89, 195, 191, 0.54) 50%, rgba(253, 253, 226, 0.87) 88%, rgba(253, 253, 226, 0.54) 100%); }
+    background: linear-gradient(left top, #caabd6 0%, rgba(202, 171, 214, 0.87) 12%, rgba(89, 195, 191, 0.54) 50%, rgba(253, 253, 226, 0.87) 88%, rgba(253, 253, 226, 0.54) 100%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    box-sizing: border-box; }
 
 @media (min-width: 840px) {
   .mdc-layout-grid {
