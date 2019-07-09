@@ -264,9 +264,10 @@
         align-items: stretch;
         overflow: hidden;
         .tm-custom-banner__content {
-            background-image: url('./../assets/Logo-dark.svg');
+            background-image: url('./../assets/Asset1.svg');
             background-repeat: no-repeat;
-            background-position: 16px 16px;
+            background-position: 50% 5%;
+            background-size: auto 170px;
             width: 100%;
             height: 259px;
             flex: 1;
@@ -276,18 +277,43 @@
             align-items: stretch;
         }
         .tm-custom-banner__content--media {
+	         background-image: url('./../assets/Logo-dark.svg');
+            background-repeat: no-repeat;
+            background-position: 16px 16px;
+            background-size: auto 12px;
 			position:relative;
 			height: 100%;
         }
     }
-    .tm-jiro {
-        height: 170px;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-        margin: auto;
+	.tm-custom-banner__content--description{
+        bottom: 16px;
+        left: 16px;
         position: absolute;
-    }
+	}
+	.tm-custom-banner__content--description-text{
+        @include mdc-typography(body1);
+        @include mdc-theme-prop(color,text-primary-on-light);
+        @include mdc-typography-overflow-ellipsis;
+        line-height: .75rem;
+		font-size:13px;
+		font-weight:600;
+        line-height: 21px;
+        padding-bottom: 4px;
+
+	}
+	.mt-accent-button{
+        @include mdc-button-ink-color($tm-accent-color);
+        @include mdc-button-container-fill-color($mdc-theme-surface);
+        @include mdc-button-shape-radius(16px,$rtl-reflexive);
+        @include mdc-button-outline-color($tm-accent-color);
+        @include mdc-button-outline-width(1px);
+        @include mdc-button-horizontal-padding(12px);
+        //border-radius: 24px;
+        height: 32px;
+		.mdc-button__label{
+			font-size:13px;
+		}
+	}
 }
 .mdc-theme--text-disabled-on-background {
 }
