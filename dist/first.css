@@ -5545,6 +5545,14 @@ svg.mdc-button__icon {
       line-height: .75rem; }
   .tm-body .tm-section {
     padding-bottom: 12px; }
+  .tm-body .tm-custom-banner {
+    border-radius: 8px;
+    height: 259px;
+    width: 100%;
+    background-color: #caabd6;
+    background: filter-gradient(#caabd6, #59c3bf, horizontal);
+    background: -webkit-gradient(linear, left top, right bottom, from(#caabd6), color-stop(12%, rgba(202, 171, 214, 0.87)), color-stop(50%, rgba(89, 195, 191, 0.54)), color-stop(88%, rgba(253, 253, 226, 0.87)), to(rgba(253, 253, 226, 0.54)));
+    background: linear-gradient(left top, #caabd6 0%, rgba(202, 171, 214, 0.87) 12%, rgba(89, 195, 191, 0.54) 50%, rgba(253, 253, 226, 0.87) 88%, rgba(253, 253, 226, 0.54) 100%); }
 
 @media (min-width: 840px) {
   .mdc-layout-grid {
