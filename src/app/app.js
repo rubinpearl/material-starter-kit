@@ -58,8 +58,8 @@ const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field__icon'
 
 
 var p = new Parallax('.tm-parallax', {
-	  offsetYBounds: 50,
-	  intensity: 30,
-	  center: 0.5,
+	  offsetYBounds: 90,
+	  intensity: 80,
+	  center: 0.8,
 	  safeHeight: 0.15
 	}).init()

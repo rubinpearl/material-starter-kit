@@ -316,6 +316,14 @@
 			font-size:13px;
 		}
 	}
+	.tm-main-title-container{
+		height:188px;
+		overflow:hidden;
+		.tm-main-title-container--figure{
+			margin:0;
+			padding:0;
+		}
+	}
 }
 .mdc-theme--text-disabled-on-background {
 }
