@@ -280,7 +280,7 @@
 	         background-image: url('./../assets/Logo-dark.svg');
             background-repeat: no-repeat;
             background-position: 16px 16px;
-            background-size: auto 12px;
+            background-size: auto 16px;
 			position:relative;
 			height: 100%;
         }
@@ -310,6 +310,7 @@
         @include mdc-button-horizontal-padding(12px);
         //border-radius: 24px;
         height: 32px;
+		z-index:1;
 		.mdc-button__label{
 			font-size:13px;
 		}
