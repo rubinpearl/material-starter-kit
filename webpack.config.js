@@ -71,29 +71,24 @@ module.exports = [{
   module: {
       rules: [{
           test: /\.scss$/,
-          // test: /\.(sa|sc|c)ss$/,
-          use: [
-        	  {
+          use: [{
                   loader: MiniCssExtractPlugin.loader,
               }, 
               {
                   loader: 'css-loader',
-              }, 
-              {
+              }, {
                   loader: 'postcss-loader',
                   options: {
                       plugins: () => [autoprefixer()],
                   },
-              }, 
-              {
+              }, {
                   loader: 'sass-loader',
                   options: {
-                      includePaths: [path.resolve(__dirname, 'node_modules')],
                       importer: materialImporter
                   },
               }
           ],
-      },{
+      }, {
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
