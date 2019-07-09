@@ -264,6 +264,16 @@
 	.tm-section{
 		padding-bottom: 12px;
 	}
+	.tm-custom-banner{
+		border-radius:$radius;
+		height : 259px;
+		width:100%;
+		background-color: rgba(202,171,214,1);
+		background: filter-gradient(#caabd6, #59c3bf, horizontal);
+		background: linear-gradient(left top, rgba(202,171,214,54) 0%, rgba(202,171,214,0.87) 12%, rgba(89,195,191,0.54) 50%, rgba(253,253,226,0.87) 88%, rgba(253,253,226,0.54) 100%);
+
+
+	}
 }
 
 
