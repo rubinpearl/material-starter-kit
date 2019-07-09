@@ -156,8 +156,8 @@
 			//@include mdc-chip-fill-color-accessible($tm-light-background-color);
 			@include mdc-chip-outline(1px, solid, $tm-dividers-color);
 		@include mdc-chip-ink-color(text-primary-on-light);
-			@include mdc-chip-fill-color($tm-light-background-color);
-
+			//@include mdc-chip-fill-color($tm-light-background-color);
+@include mdc-chip-fill-color($mdc-theme-surface);
 						@include mdc-states-focus-opacity(0);
 		//border:none;
 			.mdc-chip__text{
@@ -170,7 +170,8 @@
 					box-sizing: border-box; 
 			@include mdc-chip-ink-color(text-primary-on-light);
 		//	@include mdc-chip-leading-icon-color(secondary, 0.84);
-			@include mdc-chip-fill-color($tm-secondary-light-background-color);
+		//	@include mdc-chip-fill-color($tm-secondary-light-background-color);
+		@include mdc-chip-fill-color($tm-light-background-color);
 									@include mdc-states-focus-opacity(0);
 		}
 	}
@@ -275,7 +276,7 @@
 		background: linear-gradient(left top, rgba(202,171,214,54) 0%, rgba(202,171,214,0.87) 12%, rgba(89,195,191,0.54) 50%, rgba(253,253,226,0.87) 88%, rgba(253,253,226,0.54) 100%);
 		border-width:1px;
 		border-style:solid;
-		border-color:$tm-dividers-color;
+		border-color:#dddddd;
 		box-sizing: border-box; 
 
 	}

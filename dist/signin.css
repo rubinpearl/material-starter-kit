@@ -5341,7 +5341,7 @@ svg.mdc-button__icon {
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
       color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
-      background-color: rgba(0, 0, 0, 0.04); }
+      background-color: #FFFFFF; }
       .tm-body .mdc-chip-set .mdc-chip::before, .tm-body .mdc-chip-set .mdc-chip::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
@@ -5378,7 +5378,7 @@ svg.mdc-button__icon {
       color: rgba(0, 0, 0, 0.87);
       /* @alternate */
       color: var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, 0.87));
-      background-color: rgba(0, 131, 142, 0.12); }
+      background-color: rgba(0, 0, 0, 0.04); }
       .tm-body .mdc-chip-set .mdc-chip--selected::before, .tm-body .mdc-chip-set .mdc-chip--selected::after {
         background-color: rgba(0, 0, 0, 0.87); }
         @supports not (-ms-ime-align: auto) {
@@ -5560,7 +5560,7 @@ svg.mdc-button__icon {
     background: linear-gradient(left top, #caabd6 0%, rgba(202, 171, 214, 0.87) 12%, rgba(89, 195, 191, 0.54) 50%, rgba(253, 253, 226, 0.87) 88%, rgba(253, 253, 226, 0.54) 100%);
     border-width: 1px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.12);
+    border-color: #dddddd;
     box-sizing: border-box; }
 
 @media (min-width: 840px) {
