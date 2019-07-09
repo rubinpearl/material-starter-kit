@@ -5,6 +5,7 @@ import {MDCTextField} from '@material/textfield';
 import {MDCChipSet} from '@material/chips';
 import {MDCRipple} from '@material/ripple';
 import {MDCTextFieldIcon} from '@material/textfield/icon';
+import  * as Parallax from './../../node_modules/scroll-parallax/dist/Parallax.js';
 
 //const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
@@ -55,3 +56,10 @@ const icon = new MDCTextFieldIcon(document.querySelector('.mdc-text-field__icon'
 
 
 
+
+var p = new Parallax('.tm-parallax', {
+	  offsetYBounds: 50,
+	  intensity: 30,
+	  center: 0.5,
+	  safeHeight: 0.15
+	}).init()

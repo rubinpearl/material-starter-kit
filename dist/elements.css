@@ -5632,6 +5632,8 @@ svg.mdc-button__icon {
       border-radius: 16px; }
     .tm-body .mt-accent-button:not(:disabled) {
       border-color: #F50057; }
+    .tm-body .mt-accent-button::before, .tm-body .mt-accent-button::after {
+      background-color: #F50057; }
     .tm-body .mt-accent-button .mdc-button__label {
       font-size: 13px; }
 
