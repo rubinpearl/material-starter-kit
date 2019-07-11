@@ -339,19 +339,21 @@
 			.tm-main-title-container--teaser__content{
 				position: absolute;
 				top: 50%;
-			//	width: 100%;
-				padding: 16px;
+				width: 100%;
+
 				transform: translate(0, -50%);
 				.tm-main-title{
             		@include mdc-typography(headline3);
 					font-size:46.53px;
 					font-weight:400;
 					margin: 0;
+					padding:0 16px;
 					
 				}
 				.tm-main-description{
             		@include mdc-typography(body2);
 					font-size:15.51px;
+					padding:0 16px;
 				}
 			}
 		}
