@@ -232,14 +232,17 @@
     }
     .tm-header-box {
         padding-bottom: 4px;
+		padding-top: 16px;
         .tm-header-box__title {
             @include mdc-typography(headline5);
             @include mdc-typography-overflow-ellipsis;
             margin: 0;
+font-weight:600;
         }
         .tm-header-box__description {
             @include mdc-typography(caption);
-            @include mdc-theme-prop(color,text-hint-on-light);
+        //   @include mdc-theme-prop(color,text-secondary-on-light);
+color:rgba(0,0,0, 0.54);
             @include mdc-typography-overflow-ellipsis;
             line-height: .75rem;
         }
@@ -345,7 +348,7 @@
 				.tm-main-title{
             		@include mdc-typography(headline3);
 					font-size:46.53px;
-					font-weight:400;
+					font-weight:500;
 					margin: 0;
 					padding:0 16px;
 					
