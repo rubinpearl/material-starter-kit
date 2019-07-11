@@ -135,18 +135,18 @@
 <body class="tm-body mdc-typography">
 
 	<script type="text/javascript">
-	<!--
+
 		// ビーコンタグ（興行まとめに埋める）
 		(new TLAB.Beacon("access", "", "", [ {
 			item_id : "e_394438"
 		} ])).sendRequest();
-	// -->
+
 	</script>
 	<div id="wrapper">
 		<!--// header -->
 		<header id="header" role="banner">
 
-			<style>
+<style>
 .listBlock02 .itemsBox .items .item .title {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
@@ -305,7 +305,7 @@
 
 
 			<script type="text/javascript">
-			<!--
+	
 				function search_function() {
 					$('#form_header').submit();
 				}
@@ -435,10 +435,16 @@
 			<main id="main" role="main">
 
 
-<section class="tm-main-title-container">
-<figure class="tm-main-title-container--figure">
+<section class="tm-main-title-container" id="tm-parallax" data-relative-input="true" >
+<figure class="tm-main-title-container--figure" data-depth="0.2">
   <img class="tm-parallax" src="http://cdn.playbuzz.com/cdn/b331a9bf-3c6e-4a66-8ad4-42d016826cb1/74b947da-e868-4c7b-8211-88d4e61344bc.jpg" />
 </figure>
+<div class="tm-main-title-container--teaser" data-depth="0.6">
+      <div class="tm-main-title-container--teaser__content">
+        <h1 class="tm-main-title">初めてのミュージカル</h1>
+        <p class="tm-main-description">ミュージカルは面白い
+      </p></div>
+    </div>
 </section>
 
 
@@ -458,6 +464,27 @@
 		<div class="mdc-layout-grid tm-layout-grid">
 			<div class="mdc-layout-grid__inner">
 				<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+
+
+					<!-- --------Section Area---------- -->
+
+					<section class="tm-section">
+						<div class="tm-custom-banner">
+							<div class="tm-custom-banner__content">
+								<div class="tm-custom-banner__content--media">
+									<div class="tm-custom-banner__content--description">
+										<div class="tm-custom-banner__content--description-text">あなたにピッタシの公演はこれだ！</div>
+										<button
+											class="mdc-button mdc-button--outlined mt-accent-button">
+											<span class="mdc-button__label">診断を開始</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- --------Section Area---------- -->
+
 
 
 					<!-- --------Section Area---------- -->
@@ -524,24 +551,7 @@
 					</section>
 
 					<!-- --------Section Area---------- -->
-					<!-- --------Section Area---------- -->
 
-					<section class="tm-section">
-						<div class="tm-custom-banner">
-							<div class="tm-custom-banner__content">
-								<div class="tm-custom-banner__content--media">
-									<div class="tm-custom-banner__content--description">
-										<div class="tm-custom-banner__content--description-text">あなたにピッタシの公演はこれだ！</div>
-										<button
-											class="mdc-button mdc-button--outlined mt-accent-button">
-											<span class="mdc-button__label">診断を開始</span>
-										</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-					<!-- --------Section Area---------- -->
 
 </main>
 <!-- /main --></main>
@@ -670,7 +680,7 @@
 
 
 			<script>
-			<!--
+
 				$(function() {
 					$(".listBlock02 .itemsBox .items .item .title ").each(
 							function() {
@@ -724,7 +734,7 @@
 														});
 									});
 				});
-				-->
+		
 			</script>
 
 

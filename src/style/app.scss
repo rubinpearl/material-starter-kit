@@ -319,9 +319,41 @@
 	.tm-main-title-container{
 		height:188px;
 		overflow:hidden;
+		position:relative;
 		.tm-main-title-container--figure{
 			margin:0;
 			padding:0;
+	
+		}
+		.tm-main-title-container--teaser{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			color: white;
+			text-shadow: 0 0 8px black;
+			text-align: center;
+			font-size: 2rem;
+			top:0;
+			background: rgba(0,0,0,0.38);
+			
+			.tm-main-title-container--teaser__content{
+				position: absolute;
+				top: 50%;
+			//	width: 100%;
+				padding: 16px;
+				transform: translate(0, -50%);
+				.tm-main-title{
+            		@include mdc-typography(headline3);
+					font-size:46.53px;
+					font-weight:400;
+					margin: 0;
+					
+				}
+				.tm-main-description{
+            		@include mdc-typography(body2);
+					font-size:15.51px;
+				}
+			}
 		}
 	}
 }

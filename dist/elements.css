@@ -5638,10 +5638,51 @@ svg.mdc-button__icon {
       font-size: 13px; }
   .tm-body .tm-main-title-container {
     height: 188px;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     .tm-body .tm-main-title-container .tm-main-title-container--figure {
       margin: 0;
       padding: 0; }
+    .tm-body .tm-main-title-container .tm-main-title-container--teaser {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      color: white;
+      text-shadow: 0 0 8px black;
+      text-align: center;
+      font-size: 2rem;
+      top: 0;
+      background: rgba(0, 0, 0, 0.38); }
+      .tm-body .tm-main-title-container .tm-main-title-container--teaser .tm-main-title-container--teaser__content {
+        position: absolute;
+        top: 50%;
+        padding: 16px;
+        -webkit-transform: translate(0, -50%);
+                transform: translate(0, -50%); }
+        .tm-body .tm-main-title-container .tm-main-title-container--teaser .tm-main-title-container--teaser__content .tm-main-title {
+          font-family: Libre Franklin, sans-serif;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          font-size: 2.99063rem;
+          line-height: 3.125rem;
+          font-weight: 500;
+          letter-spacing: normal;
+          text-decoration: inherit;
+          text-transform: inherit;
+          font-size: 46.53px;
+          font-weight: 400;
+          margin: 0; }
+        .tm-body .tm-main-title-container .tm-main-title-container--teaser .tm-main-title-container--teaser__content .tm-main-description {
+          font-family: Libre Franklin, sans-serif;
+          -moz-osx-font-smoothing: grayscale;
+          -webkit-font-smoothing: antialiased;
+          font-size: 0.8725rem;
+          line-height: 1.25rem;
+          font-weight: 400;
+          letter-spacing: 0.01786em;
+          text-decoration: inherit;
+          text-transform: inherit;
+          font-size: 15.51px; }
 
 @media (min-width: 840px) {
   .mdc-layout-grid {
