@@ -20,6 +20,8 @@
 @import "@material/chips/mdc-chips";
 @import "@material/fab/mdc-fab";
 @import "@material/elevation/mdc-elevation";
+@import "@material/line-ripple/mdc-line-ripple";
+@import "@material/floating-label/mdc-floating-label";
 
 
 
@@ -56,36 +58,37 @@
         .mdc-top-app-bar--fixed-adjust {
             padding-top: 64px;
         }
+		.mdc-text-field {
+	        @include mdc-text-field-ink-color($mdc-theme-on-primary);
+	        @include mdc-text-field-label-color($mdc-theme-on-primary);
+	        @include mdc-text-field-caret-color($mdc-theme-on-primary);
+	        @include mdc-text-field-outline-color(transparent);
+	        @include mdc-text-field-hover-outline-color(transparent);
+	        @include mdc-text-field-focused-outline-color(transparent);
+	        @include mdc-text-field-outline-shape-radius($radius,$rtl-reflexive);
+	        width: 100%;
+	        height: 48px;
+	        .mdc-text-field__input {
+	            border-radius: $radius;
+	        }
+	        .mdc-text-field__icon {
+	            bottom: 12px;
+	        }
+	        .mdc-top-app-bar__navigation-icon {
+	            left: 0;
+	            bottom: 0;
+	        }
+	        .mdc-text-field__input {
+	            padding-left: 56px;
+	        }
+	    }
     }
     @media (max-width:599px) {
         .mdc-top-app-bar--fixed-adjust {
             padding-top: 64px;
         }
     }
-    .mdc-text-field {
-        @include mdc-text-field-ink-color($mdc-theme-on-primary);
-        @include mdc-text-field-label-color($mdc-theme-on-primary);
-        @include mdc-text-field-caret-color($mdc-theme-on-primary);
-        @include mdc-text-field-outline-color(transparent);
-        @include mdc-text-field-hover-outline-color(transparent);
-        @include mdc-text-field-focused-outline-color(transparent);
-        @include mdc-text-field-outline-shape-radius($radius,$rtl-reflexive);
-        width: 100%;
-        height: 48px;
-        .mdc-text-field__input {
-            border-radius: $radius;
-        }
-        .mdc-text-field__icon {
-            bottom: 12px;
-        }
-        .mdc-top-app-bar__navigation-icon {
-            left: 0;
-            bottom: 0;
-        }
-        .mdc-text-field__input {
-            padding-left: 56px;
-        }
-    }
+    
     .tm-masonry-image-list {
         @include mdc-image-list-masonry-columns(2);
         @include mdc-image-list-shape-radius($radius,$rtl-reflexive);
@@ -363,10 +366,10 @@
 	}
 	.tm-title{
 		text-align:center;
+		margin-bottom: 24px;
 		.tm-title__headline{
 		    @include mdc-typography(headline4);
 			margin:0;
-			font-family:"Merriweather", serif;
 
 		}
 		.tm-title__caption{
@@ -379,7 +382,7 @@
 		.mdc-button{
 			@include mdc-button-container-fill-color(secondary);
 			@include mdc-button-ink-color(on-secondary);
-			margin:48px 0;
+			margin:24px 0 48px 0;
 		}
 	}
 	.tm-backgound__drawkit-notebook-man-colour{
@@ -390,7 +393,8 @@
 		    background-position: 50% 50%;
 		    background-size:contain;
 		//	width: 170px;
-			height: 50vh;
+			height: 40vh;
+			min-height:170px;
 			display:block;
 		}
 	}
@@ -402,7 +406,8 @@
 		    background-position: 50% 50%;
 		    background-size:contain;
 		//	adjust 
-			height: calc(50vh - 56px);
+			height: calc(40vh - 56px);
+			min-height:170px;
 			margin:16px;
 			display:block;
 		}
@@ -410,13 +415,21 @@
 	.tm-layout-grid__whole-page{
 		 text-align:center;
 	//	 height: 100%;
-		 display: flex;
-		 align-content: center;
-		 justify-content: center;
-		 width:inherit;
+	//	 display: flex;
+	//	 align-content: center;
+	//	 justify-content: center;
+	//	 width:inherit;
+			margin-bottom: 0;
+   			display: block;
+    		margin-top: 8vh;
+    		width: 100%;
+	
 		.mdc-layout-grid__inner{
 			width: inherit;
 		}
+	}
+	.tm-text-field{
+		
 	}
 }
 .mdc-theme--text-disabled-on-background {

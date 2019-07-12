@@ -1,11 +1,15 @@
 
-//import {MDCTopAppBar} from '@material/top-app-bar';
-//import {MDCDrawer} from "@material/drawer";
-//import {MDCTextField} from '@material/textfield';
-//import {MDCChipSet} from '@material/chips';
+import {MDCTopAppBar} from '@material/top-app-bar';
+import {MDCDrawer} from "@material/drawer";
+import {MDCTextField} from '@material/textfield';
+import {MDCChipSet} from '@material/chips';
 import {MDCRipple} from '@material/ripple';
-//import {MDCTextFieldIcon} from '@material/textfield/icon';
-//import  * as Parallax from './../../node_modules/scroll-parallax/dist/Parallax.js';
+import {MDCTextFieldIcon} from '@material/textfield/icon';
+
+import {MDCLineRipple} from '@material/line-ripple';
+import {MDCFloatingLabel} from '@material/floating-label';
+
+
 import simpleParallax from './../../node_modules/simple-parallax-js'
 //const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
@@ -92,6 +96,15 @@ if (iconeEl !== null) {
 	const fabRipple = new MDCTextFieldIcon(iconeEl);
 }
 
+const lineRippleEl = document.querySelector('.mdc-line-ripple');
+if (lineRippleEl !== null) {
+	const fabRipple = new MDCLineRipple(lineRippleEl);
+}
+
+const floatingLabelEl = document.querySelector('.mdc-floating-label');
+if (floatingLabelEl !== null) {
+	const floatingLabel = new MDCFloatingLabel(floatingLabelEl);
+}
 
 
 
