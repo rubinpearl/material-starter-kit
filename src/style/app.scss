@@ -22,7 +22,8 @@
 @import "@material/elevation/mdc-elevation";
 @import "@material/line-ripple/mdc-line-ripple";
 @import "@material/floating-label/mdc-floating-label";
-
+@import "@material/form-field/mdc-form-field";
+@import "@material/checkbox/mdc-checkbox";
 
 
 // Check out the MDC Web documentation for how to use MDC Sass mixins:
@@ -140,10 +141,10 @@
             box-sizing: border-box;
             z-index: 1;
             @include mdc-chip-shape-radius(16px,$rtl-reflexive);
-            //@include mdc-chip-fill-color-accessible($tm-light-background-color);
-            @include mdc-chip-outline(1px,solid,$tm-dividers-color);
+            //@include mdc-chip-fill-color-accessible($tm-gray-12);
+            @include mdc-chip-outline(1px,solid,$tm-gray-12);
             @include mdc-chip-ink-color(text-primary-on-light);
-            //@include mdc-chip-fill-color($tm-light-background-color);
+            //@include mdc-chip-fill-color($tm-gray-12);
             @include mdc-chip-fill-color($mdc-theme-surface);
             @include mdc-states-focus-opacity(0);
             //border: none;
@@ -158,7 +159,7 @@
             @include mdc-chip-ink-color(text-primary-on-light);
             //  @include mdc-chip-leading-icon-color(secondary,0.84);
             //  @include mdc-chip-fill-color($tm-secondary-light-background-color);
-            @include mdc-chip-fill-color($tm-light-background-color);
+            @include mdc-chip-fill-color($tm-gray-12);
             @include mdc-states-focus-opacity(0);
         }
     }
@@ -223,7 +224,7 @@
             @include mdc-button-ink-color($mdc-theme-secondary);
             @include mdc-button-container-fill-color($mdc-theme-surface);
             @include mdc-button-shape-radius(24px,$rtl-reflexive);
-            @include mdc-button-outline-color($tm-dividers-color);
+            @include mdc-button-outline-color($tm-gray-12);
             @include mdc-button-outline-width(1px);
             @include mdc-button-horizontal-padding(12px);
             @include mdc-states-base-color(black);
@@ -428,8 +429,32 @@
 			width: inherit;
 		}
 	}
-	.tm-text-field{
-		
+	.tm-signin-form{
+		.mdc-text-field{
+			width:100%;
+			margin-bottom:12px;
+			margin-top:12px;
+			@include mdc-text-field-ink-color(on-primary);
+			@include mdc-text-field-label-color(text-hint-on-light);
+			@include mdc-text-field-caret-color(on-primary);
+			
+			@include mdc-text-field-shape-radius($radius, $rtl-reflexive);
+		//	@include mdc-text-field-fill-color($color);
+			@include mdc-text-field-bottom-line-color($tm-gray-12);
+		//	@include mdc-text-field-hover-bottom-line-color($color);
+			@include mdc-text-field-line-ripple-color(on-primary);
+		}
+		.mdc-text-field.mdc-text-field--invalid{
+			@include mdc-text-field-label-color(error);
+			@include mdc-text-field-line-ripple-color(error);
+		}
+		.mdc-form-field{
+			width: 100%;
+			.mdc-checkbox{
+				@include mdc-checkbox-ink-color(on-secondary);
+			}
+		}
+
 	}
 }
 .mdc-theme--text-disabled-on-background {

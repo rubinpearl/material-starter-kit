@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Welcome! | Things Management</title>
+<title>Sign in | Things Management</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -13,11 +13,11 @@
 
 <!-- import the Material stylesheet -->
 
-<link href="signin.css?977e753a9dfc557a8341" rel="stylesheet"></head>
+<link href="signin.css?a813f404139f1a1902f5" rel="stylesheet"></head>
 
 <body class="tm-body mdc-typography">
 
-    <div class="mdc-layout-grid tm-layout-grid__whole-page-top">
+    <div class="mdc-layout-grid tm-layout-grid__whole-page">
         <div class="mdc-layout-grid__inner">
             <div class="mdc-layout-grid__cell mdc-layout-grid__cell--align-middle mdc-layout-grid__cell--span-12">
                 <!-- --------Section Area---------- -->
@@ -27,12 +27,41 @@
                             <h1 class="tm-title__headline">Sign in</h1>
                         </div>
                         
-                        <div>
-<div class="mdc-text-field">
-  <input class="mdc-text-field__input" id="text-field-hero-input">
-  <div class="mdc-line-ripple"></div>
-  <label for="text-field-hero-input" class="mdc-floating-label">Name</label>
-</div>
+                        <div class="tm-content tm-signin-form">
+                            <div class="mdc-text-field">
+                              <input class="mdc-text-field__input" id="text-field-email-input" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$">
+                              <div class="mdc-line-ripple"></div>
+                              <label for="text-field-hero-input" class="mdc-floating-label">E-mail</label>
+                            </div>
+                            
+                            <div class="mdc-text-field">
+                              <input type="password" class="mdc-text-field__input" id="text-field-password-input" required minlength=4>
+                              <div class="mdc-line-ripple"></div>
+                              <label for="text-field-hero-input" class="mdc-floating-label">Password</label>
+                            </div>
+                            
+                            <div class="mdc-form-field">
+                              <div class="mdc-checkbox">
+                                <input type="checkbox"
+                                       class="mdc-checkbox__native-control"
+                                       id="checkbox-1"/>
+                                <div class="mdc-checkbox__background">
+                                  <svg class="mdc-checkbox__checkmark"
+                                       viewBox="0 0 24 24">
+                                    <path class="mdc-checkbox__checkmark-path"
+                                          fill="none"
+                                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                                  </svg>
+                                  <div class="mdc-checkbox__mixedmark"></div>
+                                </div>
+                              </div>
+                              <label for="checkbox-1">Remember me</label>
+                            </div>
+
+                            <button class="mdc-button mdc-button--raised">
+                                <span class="mdc-button__label">Sign in</span>
+                            </button>
+
                         </div>
                     </section>
                     
@@ -46,5 +75,5 @@
 
     <!-- import the Material javascript file -->
 
-<script type="text/javascript" src="signin.js?977e753a9dfc557a8341"></script></body>
+<script type="text/javascript" src="signin.js?a813f404139f1a1902f5"></script></body>
 </html>

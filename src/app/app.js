@@ -9,6 +9,8 @@ import {MDCTextFieldIcon} from '@material/textfield/icon';
 import {MDCLineRipple} from '@material/line-ripple';
 import {MDCFloatingLabel} from '@material/floating-label';
 
+import {MDCFormField} from '@material/form-field';
+import {MDCCheckbox} from '@material/checkbox';
 
 import simpleParallax from './../../node_modules/simple-parallax-js'
 //const ripple = new MDCRipple(document.querySelector('.foo-button'));
@@ -105,6 +107,19 @@ const floatingLabelEl = document.querySelector('.mdc-floating-label');
 if (floatingLabelEl !== null) {
 	const floatingLabel = new MDCFloatingLabel(floatingLabelEl);
 }
+
+
+const formFieldEl = document.querySelector('.mdc-form-field');
+const checkboxEl = document.querySelector('.mdc-checkbox');
+if (formFieldEl !== null) {
+	const formField = new MDCFormField(formFieldEl);
+	
+	if (checkboxEl !== null) {
+		const checkbox = new MDCCheckbox(checkboxEl);
+		formField.input = checkbox;
+	}	
+}
+
 
 
 
