@@ -57,11 +57,36 @@ module.exports = [{
           path.resolve(__dirname, 'src/style/app.scss'),
           path.resolve(__dirname, 'src/app/app.js')
 		  ],
-	  elements:[
+	  getstarted:[
           path.resolve(__dirname, 'src/public/elements.html'),
           path.resolve(__dirname, 'src/style/app.scss'),
           path.resolve(__dirname, 'src/app/app.js')
-		  ]
+		  ],
+	  regist:[
+          path.resolve(__dirname, 'src/public/elements.html'),
+          path.resolve(__dirname, 'src/style/app.scss'),
+          path.resolve(__dirname, 'src/app/app.js')
+		  ],
+	  search:[
+          path.resolve(__dirname, 'src/public/signin.html'),
+          path.resolve(__dirname, 'src/style/app.scss'),
+          path.resolve(__dirname, 'src/app/app.js')
+		  ],
+      list:[
+          path.resolve(__dirname, 'src/public/elements.html'),
+          path.resolve(__dirname, 'src/style/app.scss'),
+          path.resolve(__dirname, 'src/app/app.js')
+		  ],
+	  detail:[
+          path.resolve(__dirname, 'src/public/elements.html'),
+          path.resolve(__dirname, 'src/style/app.scss'),
+          path.resolve(__dirname, 'src/app/app.js')
+		  ],
+	  musical:[
+	      path.resolve(__dirname, 'src/public/musical.html'),
+	      path.resolve(__dirname, 'src/style/musical.scss'),
+	      path.resolve(__dirname, 'src/app/musical.js')
+		  ]		  
 	  },
 	 // ['./app.scss', './app.js'],
   output: {
@@ -141,12 +166,52 @@ module.exports = [{
             filename: 'signin.html'
         }),
         new HtmlWebpackPlugin({
-        	title: 'sign-in',
+        	title: 'get-started',
             hash: true,
             inject: true,
-            template: path.resolve(__dirname, 'src/public/signin.html'),
-            chunks: ['elements'],
-            filename: 'elements.html'
+            template: path.resolve(__dirname, 'src/public/getstarted.html'),
+            chunks: ['getstarted'],
+            filename: 'getstarted.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'regist',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/regist.html'),
+            chunks: ['regist'],
+            filename: 'regist.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'search',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/search.html'),
+            chunks: ['search'],
+            filename: 'search.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'list',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/list.html'),
+            chunks: ['list'],
+            filename: 'list.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'detail',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/detail.html'),
+            chunks: ['detail'],
+            filename: 'detail.html'
+        }),
+        new HtmlWebpackPlugin({
+        	title: 'musical',
+            hash: true,
+            inject: true,
+            template: path.resolve(__dirname, 'src/public/musical.html'),
+            chunks: ['musical'],
+            filename: 'musical.html'
         }),
         new MiniCssExtractPlugin({
             // Options similar to the same options in webpackOptions.output
