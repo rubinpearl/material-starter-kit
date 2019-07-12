@@ -5717,7 +5717,7 @@ svg.mdc-button__icon {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
-    height: 50%;
+    height: 50vh;
     display: block; }
   .tm-body .tm-backgound__support-notes-colour:after {
     content: '';
@@ -5725,7 +5725,7 @@ svg.mdc-button__icon {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
-    height: calc(50% - 56px);
+    height: calc(50vh - 56px);
     margin: 16px;
     display: block; }
   .tm-body .tm-layout-grid__whole-page {

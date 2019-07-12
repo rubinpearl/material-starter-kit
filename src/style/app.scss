@@ -390,7 +390,7 @@
 		    background-position: 50% 50%;
 		    background-size:contain;
 		//	width: 170px;
-			height: 50%;
+			height: 50vh;
 			display:block;
 		}
 	}
@@ -402,7 +402,7 @@
 		    background-position: 50% 50%;
 		    background-size:contain;
 		//	adjust 
-			height: calc(50% - 56px);
+			height: calc(50vh - 56px);
 			margin:16px;
 			display:block;
 		}
