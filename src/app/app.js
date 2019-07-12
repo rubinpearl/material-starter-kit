@@ -22,29 +22,23 @@ import simpleParallax from './../../node_modules/simple-parallax-js'
 
 
 
-//const drawerEl = document.querySelector('.mdc-drawer');
-//if (!drawerEl) {
-//	const drawer = MDCDrawer.attachTo(drawerEl);
-//}
-
-
-const topAppBarEl = document.getElementById('tm-app-bar');
-
-console.log(topAppBarEl);
-if (topAppBarEl !== null) {
-	const topAppBar = MDCTopAppBar.attachTo(topAppBarEl);
-	topAppBar.listen('MDCTopAppBar:nav', () => {
-		drawer.open = !drawer.open;
-	});
+const drawerEl = document.querySelector('.mdc-drawer');
+if (drawerEl !== null) {
+	const drawer = MDCDrawer.attachTo(drawerEl);
+	const topAppBarEl = document.getElementById('tm-app-bar');
 	
-	const mainContentEl = document.getElementById('tm-main-content');
-	if (mainContentEl !== null) {
-		topAppBar.setScrollTarget(document.getElementById(mainContentEl));
+	if (topAppBarEl !== null){
+		const topAppBar = MDCTopAppBar.attachTo(topAppBarEl);
+		topAppBar.listen('MDCTopAppBar:nav', () => {
+			drawer.open = !drawer.open;
+		});
+		
+		const mainContentEl = document.getElementById('tm-main-content');
+		if (mainContentEl !== null) {
+			topAppBar.setScrollTarget(mainContentEl);
+		}
 	}
 }
-
-
-
 
 const textFiledEl = document.querySelectorAll('.mdc-text-field');
 if (textFiledEl !== null) {
