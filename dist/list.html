@@ -10,11 +10,13 @@
 <link
     href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,500,600,700|Merriweather:900i&display=swap"
     rel="stylesheet">
+    
+    
 <!-- import the Material stylesheet -->
 
-<link href="list.css?38e2c4fa3c3be73da4a7" rel="stylesheet"></head>
+<link href="list.css?583287a1e5bac9ce33b5" rel="stylesheet"></head>
 
-<body class="tm-body mdc-typography">
+<body class="tm-body mdc-typography tm-display--block">
 
 
 
@@ -25,7 +27,7 @@
             <section
                 class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
                 <!--  
-            <a href="#"
+                <a href="#"
                     class="tm-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
                 <span class="mdc-top-app-bar__title">Dismissible Drawer</span>
                 -->
@@ -45,12 +47,10 @@
                         <div class="mdc-notched-outline__trailing"></div>
                     </div>
                 </div>
-
-
-
             </section>
         </div>
     </header>
+    
     <aside class="mdc-drawer mdc-drawer--modal">
         <div class="mdc-drawer__content">
             <nav class="mdc-list">
@@ -73,30 +73,32 @@
 
     <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
         <main class="tm-main-content" id="tm-main-content">
+
+
+
          <!-- --------Chips Area---------- -->
-
-
-
-
-
-
 
 
         <section class="tm-horizontal-scroll">
             <div class="tm-horizontal-scroll__content">
+        <!-- 
+                <div class="mdc-chip-set">
+                    <div class="mdc-chip">
+                      <div class="mdc-chip__text">Sort by</div>
+                      <i class="material-icons mdc-chip__icon mdc-chip__icon--trailing" tabindex="0" role="button">arrow_drop_down</i>
+                    </div>
+                </div>
+         -->
                 <div class="mdc-chip-set mdc-chip-set--filter">
-                    <button class="mdc-chip mdc-ripple-surface">
-                        <span class="mdc-chip__text">Sort by</span>
-                    </button>
-                    <button class="mdc-chip mdc-ripple-surface">
-                        <span class="mdc-chip__checkmark"> <svg
-                                class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
+                    <button class="mdc-chip">
+                        <span class="mdc-chip__checkmark">
+                         <svg class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
                                     stroke="black" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
       </svg>
                         </span> <span class="mdc-chip__text">Book</span>
                     </button>
-                    <button class="mdc-chip mdc-ripple-surface">
+                    <button class="mdc-chip">
                         <span class="mdc-chip__checkmark"> <svg
                                 class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
@@ -104,7 +106,7 @@
       </svg>
                         </span> <span class="mdc-chip__text">Game</span>
                     </button>
-                    <button class="mdc-chip mdc-ripple-surface">
+                    <button class="mdc-chip">
                         <span class="mdc-chip__checkmark"> <svg
                                 class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
@@ -112,7 +114,7 @@
       </svg>
                         </span> <span class="mdc-chip__text">Toys</span>
                     </button>
-                    <button class="mdc-chip mdc-ripple-surface">
+                    <button class="mdc-chip">
                         <span class="mdc-chip__checkmark"> <svg
                                 class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
@@ -120,7 +122,7 @@
       </svg>
                         </span> <span class="mdc-chip__text">Clothes</span>
                     </button>
-                    <button class="mdc-chip mdc-ripple-surface">
+                    <button class="mdc-chip">
                         <span class="mdc-chip__checkmark"> <svg
                                 class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
@@ -128,7 +130,7 @@
       </svg>
                         </span> <span class="mdc-chip__text">Food</span>
                     </button>
-                    <button class="mdc-chip mdc-ripple-surface">
+                    <button class="mdc-chip">
                         <span class="mdc-chip__checkmark"> <svg
                                 class="mdc-chip__checkmark-svg" viewBox="-2 -3 30 30">
         <path class="mdc-chip__checkmark-path" fill="none"
@@ -140,17 +142,12 @@
             </div>
         </section>
         <!-- --------Chips Area---------- -->
+        
         <!-- -------- Main Area---------- -->
 
         <div class="mdc-layout-grid tm-layout-grid">
             <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
-
-
-
-
-
-
 
                     <ul
                         class="mdc-image-list mdc-image-list--masonry tm-masonry-image-list">
@@ -185,12 +182,13 @@
                             src="https://www.dior.com/beauty/version-5.156982000273/resize-image/ep/870/580/90/0/MISSDIOR_2019%252F01_Covers%252FY0326210_F032624889_E01_ZHC.jpg">
                             <div class="mdc-image-list__supporting">
                                 <span class="mdc-image-list__label">Text label4</span>
-                            </div></li>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- --------Masonry List Area---------- --> </main>
+        <!-- --------Masonry List Area---------- -->
+        </main>
     </div>
 
     <button class="mdc-fab app-fab--absolute" aria-label="Add">
@@ -198,5 +196,5 @@
     </button>
     <!-- import the Material javascript file -->
 
-<script type="text/javascript" src="list.js?38e2c4fa3c3be73da4a7"></script></body>
+<script type="text/javascript" src="list.js?583287a1e5bac9ce33b5"></script></body>
 </html>
